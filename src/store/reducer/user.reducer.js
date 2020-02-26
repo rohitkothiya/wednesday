@@ -2,24 +2,24 @@ import {
       FETCH_USER
 } from "../action/actionType"
 
-                           let initialState = {
+                                           let initialState = {
                                                                        userData: {},
 };
 
-const user = (state = initialState, action) => {
-                                                      switch (action.type) {
-                                      case FETCH_USER:
-                                 
+                                                  const user = (state = initialState, action) => {
+                                                                      switch (action.type) {
+                                                     case FETCH_USER:
+                                               
 
-                                                          return {
-                                                    userData: {
-                                                                       name: "rohitKDEvEnv",
-                                                        surName: "kothiya RG",
-                                                                  age: "24"
-                        }
-                  }
-                            default:
-                   return state;
+                                                                            return {
+                                                                   userData: {
+                                                                                                                    name: "rohitKDEvEnv",
+                                                                                        surName: "kothiya RG",
+                                                                                age: "24"
+                                              }
+                                                }
+                                                default:
+                                 return state;
       }
 }
 

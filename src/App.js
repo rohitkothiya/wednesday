@@ -16,20 +16,20 @@ function App(props) {
 
 
 
-              useEffect(() => {
-                 props.fetchUser()
-                         }, []) // eslint-disable-line
-
-  console.log("userData", props.userData)
-
+                              useEffect(() => {
+                                 props.fetchUser()
+                                               }, []) // eslint-disable-line
+             
+                                console.log("userData", props.userData)
+                     
                                             return (
-                       <Router>
-                                    <div>
-                                            <nav>
-                                  <ul>
-                                    <li>
+                                                 <Router>
+                                                  <div>
+                                                                <nav>
+                                                 <ul>
+                                                     <li>
                                  <Link to="/">Homes</Link>
-                        </li>
+                                 </li>
                         <li>
                                                     <Link to="/about">About</Link>
                          </li>

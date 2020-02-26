@@ -1,19 +1,19 @@
 import { combineReducers } from "redux";
 
-          import user from "./user.reducer";
+                          import user from "./user.reducer";
 
 
-                        const appReducer = combineReducers({
+                                                   const appReducer = combineReducers({
+             
+                                                                           user 
+                         });
 
-                                                    user 
-      });
+                                                                const rootReducer = (state, action) => {
+                                                                                                              if (action.type === "AUTH_LOGOUT") {
+                                                                                                   state = undefined;
+                                                          }
 
-                                                const rootReducer = (state, action) => {
-                                                                                              if (action.type === "AUTH_LOGOUT") {
-                                                                state = undefined;
-                                 }
-
-                    return appReducer(state, action);
-};
+                                           return appReducer(state, action);
+};                           
 
 export default rootReducer;
