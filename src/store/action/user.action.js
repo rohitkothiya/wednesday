@@ -1,12 +1,12 @@
 
 import {
-      FETCH_USER
-} from "./actionType"
+                                    FETCH_USER
+                 } from "./actionType"
 
 
-export const fetchUser = () => dispatch => {
+     export const fetchUser = () => dispatch => {
 
-      dispatch({
-            type: FETCH_USER
-      });
+                       dispatch({
+                                                type: FETCH_USER
+                        });
 }
